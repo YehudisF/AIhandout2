@@ -9,9 +9,9 @@ while not game.isFinished(board):
     if game.isHumTurn(board):
         game.inputMove(board)
     else:
-        start_time = time.time()
+     #   start_time = time.time()
         board=alphaBetaPruning.go(board)
-        print('---%s seconds seconds---' % (time.time() - start_time))
+      #  print('---%s seconds seconds---' % (time.time() - start_time))
 game.printState(board)
 
 
